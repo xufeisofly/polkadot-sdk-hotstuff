@@ -1,0 +1,60 @@
+# Only for std
+[package]
+name                 = "sc-consensus-hotstuff-bls"
+version              = "0.15.0"
+license              = "MIT OR Apache-2.0"
+authors.workspace    = true
+edition.workspace    = true
+homepage.workspace   = true
+repository.workspace = true
+publish              = false
+
+description = "Aggregate BLS Signatures"
+readme      = "README.md"
+
+[dependencies]
+rayon = { workspace = true, optional = true }
+rand_core = { workspace = true }
+thiserror = { workspace = true }
+subtle = { workspace = true }
+ff = { workspace = true }
+group = { workspace = true }
+pairing_lib = { workspace = true }
+bls12_381 = { workspace = true, optional = true, features = [
+  "alloc",
+  "bits",
+  "experimental",
+  "groups",
+  "pairings",
+] }
+sha2 = { workspace = true, optional = true }
+hkdf = { workspace = true, optional = true }
+blst_lib = { workspace = true, optional = true }
+blstrs = { workspace = true, optional = true }
+rand = { workspace = true }
+zeroize = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+codec = { workspace = true, features = ["derive"] }
+hex = { workspace = true }
+sp-consensus-hotstuff = { workspace = true, features = ["std"] }
+
+
+[features]
+# blst is much faster, replace blst to pairing if there comes some platform issues
+default       = ["std", "blst", "multicore"]
+multicore     = ["rayon"]
+pairing       = ["bls12_381", "sha2", "hkdf"]
+blst          = ["blst_lib", "blstrs"]
+blst-portable = ["blst_lib", "blst_lib/portable", "blstrs/portable"]
+std           = []
+
+[dev-dependencies]
+base64       = "0.22.1"
+base64-serde = "0.8.0"
+rand_chacha  = "0.9"
+tempfile     = "3.21.0"
+serde_json   = "1.0.52"
+
+[[example]]
+name              = "verify"
+required-features = ["multicore"]

@@ -1,0 +1,48 @@
+[package]
+license = "Unlicense"
+name                 = "sp-consensus-hotstuff"
+version              = "0.1.0"
+authors.workspace    = true
+edition.workspace    = true
+homepage.workspace   = true
+repository.workspace = true
+
+[dependencies]
+sp-api = { workspace = true }
+sp-runtime             = { workspace = true }
+sp-core                = { workspace = true }
+sp-application-crypto  = { workspace = true }
+sp-std                 = { workspace = true }
+sp-staking             = { workspace = true }
+sp-authority-discovery = { workspace = true }
+sp-io                  = { workspace = true }
+
+codec = { workspace = true, features = ["derive"] }
+scale-info = { workspace = true }
+serde = { workspace = true, features = ["derive", "alloc"] }
+hex = { workspace = true, features = ["alloc"] }
+bls12_381 = { workspace = true, default-features = false, features = [
+  "alloc",
+  "experimental",
+  "groups",
+  "pairings",
+] }
+group = { workspace = true, default-features = false }
+pairing_lib = { workspace = true, default-features = false }
+sha2 = { workspace = true, default-features = false }
+
+
+[features]
+default = ["std"]
+std = [
+  "sp-api/std",
+  "codec/std",
+  "scale-info/std",
+  "sp-runtime/std",
+  "sp-core/std",
+  "sp-application-crypto/std",
+  "sp-std/std",
+  "sp-staking/std",
+  "sp-authority-discovery/std",
+  "sp-io/std",
+]

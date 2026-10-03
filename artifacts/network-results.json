@@ -1,0 +1,140 @@
+{
+  "success": true,
+  "platform": "macOS-15.6.1-arm64-arm-64bit",
+  "started_at": "2026-10-03T02:42:27.163000+00:00",
+  "checks": [
+    {
+      "name": "alice RPC ready",
+      "result": "12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp"
+    },
+    {
+      "name": "bob RPC ready",
+      "result": "12D3KooWHdiAxVd8uMQR1hGWXccidmfCwLqcMpGwR6QcTP6QRMuD"
+    },
+    {
+      "name": "two of four cannot start",
+      "result": true
+    },
+    {
+      "name": "charlie RPC ready",
+      "result": "12D3KooWSCufgHzV4fCwRijfH2k3abrpAJxTKxEvN1FDuRXA2U9x"
+    },
+    {
+      "name": "three of four finalizing",
+      "result": [
+        19,
+        19,
+        19
+      ]
+    },
+    {
+      "name": "dave RPC ready",
+      "result": "12D3KooWSsChzF81YDUKpe9Uk5AHV5oqAaXAcWNSPYgoLauUk4st"
+    },
+    {
+      "name": "four validators cross three sessions",
+      "result": [
+        125,
+        125,
+        125,
+        125
+      ]
+    },
+    {
+      "name": "four validators agree",
+      "result": {
+        "height": 125,
+        "hash": "0xd7a20f5c341da503b8e5e7c6c4db0eecc83b54c2a753f85de0d53249cfb89667",
+        "nodes": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "name": "one offline retains finality",
+      "result": [
+        145,
+        145,
+        145
+      ]
+    },
+    {
+      "name": "two of four stall finality",
+      "result": 145
+    },
+    {
+      "name": "charlie RPC ready",
+      "result": "12D3KooWSCufgHzV4fCwRijfH2k3abrpAJxTKxEvN1FDuRXA2U9x"
+    },
+    {
+      "name": "restart restores quorum",
+      "result": [
+        164,
+        164,
+        164
+      ]
+    },
+    {
+      "name": "dave RPC ready",
+      "result": "12D3KooWSsChzF81YDUKpe9Uk5AHV5oqAaXAcWNSPYgoLauUk4st"
+    },
+    {
+      "name": "restarted validator catches up",
+      "result": [
+        213,
+        213,
+        213,
+        213
+      ]
+    },
+    {
+      "name": "observer RPC ready",
+      "result": "12D3KooWSuTq6MG9gPt7qZqLFKkYrfxMewTZhj9nmRHJkPwzWDG2"
+    },
+    {
+      "name": "fresh full node syncs",
+      "result": [
+        217
+      ]
+    },
+    {
+      "name": "warp RPC ready",
+      "result": "12D3KooWMz5U7fR8mF5DNhZSSyFN8c19kU63xYopzDSNCzoFigYk"
+    },
+    {
+      "name": "fresh warp node syncs",
+      "result": [
+        287
+      ]
+    },
+    {
+      "name": "all nodes follow live blocks",
+      "result": [
+        297,
+        297,
+        297,
+        297,
+        297,
+        297
+      ]
+    },
+    {
+      "name": "all nodes agree on finalized hash",
+      "result": {
+        "height": 297,
+        "hash": "0x6af7c68264c67a29eca87dbf20cd95325898fb310ae5e4dcb8155b56f8ef8f33",
+        "nodes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    }
+  ]
+}

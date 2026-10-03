@@ -1,0 +1,6 @@
+/target/
+/.cache/
+/artifacts/network/
+/artifacts/*.log
+/scripts/__pycache__/
+.DS_Store

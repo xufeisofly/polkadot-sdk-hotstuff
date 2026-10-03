@@ -1,0 +1,18 @@
+{
+  "before_allocated_bytes": {
+    "target": 9130733568,
+    ".cache": 2234351616,
+    "artifacts/network/data": 1449287680
+  },
+  "success": true,
+  "removed_paths": [
+    "target",
+    ".cache",
+    "artifacts/network/data"
+  ],
+  "cargo_clean": {
+    "removed_files": 25993,
+    "reported_size": "8.4 GiB"
+  },
+  "compressed_network_logs": 12
+}

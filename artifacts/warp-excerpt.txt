@@ -1,0 +1,3 @@
+2026-10-03 10:46:52.146  INFO tokio-rt-worker sync: Warp sync is complete, continuing with state sync.
+2026-10-03 10:46:52.345  INFO tokio-rt-worker sc-consensus-hotstuff::block_importer: ✅ Warp Finalized 0x8fcf80742ac34f742acac00d89af405d9ccb11c1b84250912207a1fd0c04f9a7
+2026-10-03 10:46:52.346  INFO tokio-rt-worker sync: State sync is complete, continuing with block sync.

@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "date": "2026-10-03",
+  "platform": "macOS-15.6.1-arm64-arm-64bit",
+  "rustc": "rustc 1.95.0 (59807616e 2026-04-14)",
+  "sdk": {
+    "skylake": "ebc16def7353c0ff6a1e69bc42f73ee3d3f6c78d",
+    "sdk": "72284b37a234f8a1565f2043ddbf8280a69fcf29",
+    "release": "polkadot-stable2606-2"
+  },
+  "unit_tests": {
+    "pallet-hotstuff": 7,
+    "sc-consensus-hotstuff": 76,
+    "sc-consensus-hotstuff-bls": 52,
+    "sp-consensus-hotstuff": 4
+  },
+  "unit_total": 139,
+  "dev_chain": {
+    "success": true,
+    "finalized_height": 6
+  },
+  "network_result": "network-results.json",
+  "warp_protocol_verified": true,
+  "keygen": {
+    "generated": true,
+    "private_seed_bytes": 32,
+    "unix_mode": "0600",
+    "overwrite_refused": true
+  },
+  "binary_sha256": "3c9c2dcaba2772f79404d13f017b27dd5d1d1b8db81186e6f194cbca05b5ac21"
+}

@@ -1,0 +1,64 @@
+[package]
+license = "Unlicense"
+name    = "sc-consensus-hotstuff"
+version = "0.1.0"
+# Unit tests live in `unit_tests/`, mirroring `src/` file-for-file, and are
+# pulled back in as crate-internal modules via
+# `#[cfg(test)] #[path = "../unit_tests/..."]` so they keep access to
+# crate-private items. The directory is deliberately NOT named `tests/` so
+# Cargo does not treat these as separate integration-test binaries.
+authors.workspace    = true
+edition.workspace    = true
+homepage.workspace   = true
+repository.workspace = true
+
+[dependencies]
+sp-keystore            = { workspace = true, default-features = true }
+sp-core                = { workspace = true, default-features = true }
+sp-application-crypto  = { workspace = true, default-features = true }
+sc-service             = { workspace = true, default-features = true }
+sp-runtime             = { workspace = true, default-features = true }
+sp-api                 = { workspace = true, default-features = true }
+sp-blockchain          = { workspace = true, default-features = true }
+sp-consensus           = { workspace = true, default-features = true }
+sp-block-builder       = { workspace = true, default-features = true }
+sp-timestamp           = { workspace = true, default-features = true }
+sp-inherents           = { workspace = true, default-features = true }
+sp-session             = { workspace = true, default-features = true }
+sp-authority-discovery = { workspace = true, default-features = true }
+
+sc-keystore             = { workspace = true, default-features = true }
+sc-client-api           = { workspace = true, default-features = true }
+sc-consensus            = { workspace = true, default-features = true }
+sc-network              = { workspace = true, default-features = true }
+sc-network-gossip       = { workspace = true, default-features = true }
+sc-network-sync         = { workspace = true, default-features = true }
+sc-utils                = { workspace = true, default-features = true }
+sc-transaction-pool-api = { workspace = true, default-features = true }
+sc-block-builder        = { workspace = true, default-features = true }
+sc-chain-spec           = { workspace = true, default-features = true }
+sc-authority-discovery  = { workspace = true, default-features = true }
+
+sp-consensus-hotstuff           = { workspace = true, default-features = true }
+sc-consensus-hotstuff-bls            = { workspace = true, default-features = true }
+prometheus-endpoint       = { workspace = true }
+
+
+hex         = { workspace = true, default-features = true }
+rand        = { workspace = true, default-features = true }
+array-bytes = { workspace = true, default-features = true }
+thiserror   = { workspace = true }
+
+codec = { workspace = true, features = [
+  "derive",
+  "max-encoded-len",
+], default-features = true }
+scale-info = { workspace = true, features = [
+  "derive",
+], default-features = true }
+
+log         = { workspace = true }
+parking_lot = { workspace = true }
+futures     = { workspace = true }
+tokio       = { workspace = true, features = ["rt", "time", "macros", "sync"] }
+async-trait = { workspace = true }
