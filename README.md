@@ -1,8 +1,8 @@
 # Hotstuff for Polkadot SDK
 
-Build a standalone blockchain with Hotstuff block production and finality. This project extracts Skylake's PC-BFT implementation into reusable Polkadot SDK crates and includes a working solochain template.
+Hotstuff consensus for Polkadot SDK blockchains, providing both block production and finality. Use the included solochain template to run a local blockchain, or integrate the consensus crates into your own chain.
 
-**Start here:** run the included chain below. Once it works, follow [Replace Aura and GRANDPA in your chain](docs/integration.md). No local Skylake or SDK fork checkout is needed.
+**Start here:** run the included chain below. Once it works, follow [Replace Aura and GRANDPA in your chain](docs/integration.md).
 
 ## 1. Get the code
 

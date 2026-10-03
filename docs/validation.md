@@ -1,6 +1,6 @@
 # Validation results
 
-Validated on 3 October 2026 with macOS 15.6.1 on Apple Silicon, Rust 1.95.0, and upstream Polkadot SDK release `polkadot-stable2606-2`. Exact crate versions are locked in `Cargo.lock`. No local SDK fork or Skylake runtime dependency was used.
+Validated on 3 October 2026 with macOS 15.6.1 on Apple Silicon, Rust 1.95.0, and upstream Polkadot SDK release `polkadot-stable2606-2`. The build uses published upstream SDK crates, with exact versions locked in `Cargo.lock`.
 
 ## Build and unit tests
 
